@@ -1,6 +1,6 @@
-#JavaScript Foundations for Node.js Beginners
+# JavaScript Foundations for Beginners
 
-Hey guys! So you wanna get into Node.js, eh? That's wicked, mate! Node.js lets you build all sorts of gnarly stuff on the server side, using the JavaScript you already know. But before you go full send into Node, you gotta nail down some core JavaScript concepts. Think of these as your essential surf skills before tackling a massive wave.
+Hey guys! Javascript lets you build all sorts of gnarly stuff on the server side, using the JavaScript you already know. But before you go full send into Node, you gotta nail down some core JavaScript concepts. Think of these as your essential surf skills before tackling a massive wave.
 
 Let's break it down, super simple style.
 
