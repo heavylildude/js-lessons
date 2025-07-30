@@ -11,7 +11,7 @@ node -v
 ```
 to check if it's working properly.
 
-##### Foldering System:
+#### Foldering System:
 
 In Node.js projects, you'll often see folders named:
 
@@ -28,21 +28,19 @@ Let's Map Out the Key Bits - Brah:
 
 
 ##### Node Init CLI:
-
 When creating a new Node.js project, you can use the npm init command to set up your project's basic configuration. This includes setting the name of your project, version number, and other essential details. Don't worry too much about this part – we'll cover it in more detail later.
 
 ##### EJS (Embedded JavaScript):
-
 EJS is a templating engine that allows you to embed JavaScript code directly into your HTML templates. Think of it like having a mini-programming language within your web pages! 🤯
 
-// Here's an example of how EJS works:
 ```
+// Here's an example of how EJS works:
 <h1><%= maintitle %></h1>
 ```
 In this example, maintitle is a variable that's defined elsewhere in the code. When rendered, this will output the value of maintitle as text.
 
-*** The Concept: ***
-====================
+## The Concept:
+=====
 
 Node.js uses an event-driven, non-blocking I/O model to handle requests and responses efficiently. This means that your server can handle multiple requests concurrently without blocking each other. It's like having a team of super-efficient workers working together in perfect harmony! 🌟
 
@@ -57,25 +55,22 @@ Here are some key areas where app.js focuses:
 - Defining the business model: The app.js file defines routes for handling incoming requests. These are like different departments within your company that handle specific tasks.
 
 
-##### Middleware
+### Middleware
 
 Middleware is like a special kind of employee who helps with specific tasks. In app.js, we have:
-
 - Static files middleware: This employee makes sure static files (like CSS and images) are served efficiently to users.
 - Body-parser middleware: This employee helps parse URL-encoded data GET and POST requests, making it easier for the company to handle input.
-
+```
 // Here's an example of how this middleware works:
-
 app.use('/assets', express.static('assets')); // Serve static files (CSS, JS, images)
 app.use(body_parser.urlencoded({ extended: true }));  // Use body-parser middleware to parse URL-encoded data GET and POST
-
+```
 In simple terms, these lines of code say:
 
-"Hey, when someone asks for a file in the /assets directory, serve it up from there."
-"When we receive a request with some encoded data, use this special employee (body-parser) to help us parse it."
+1. "Hey, when someone asks for a file in the /assets directory, serve it up from there."
+2. "When we receive a request with some encoded data, use this special employee (body-parser) to help us parse it."
 
-
-##### Routes - What are routes?
+### Routes - What are routes?
 
 In your app, routes are like different streets in a city. Each street has its own unique address and purpose (e.g., main street for shopping or parkway for recreation). Similarly, in Node.js, routes define the specific URLs that trigger certain actions.
 
@@ -84,7 +79,7 @@ Here's an analogy to help you understand:
 - URLs as addresses: Just like how a house has a specific address, your web app has specific URLs (addresses) that users can visit.
 - Routes as streets: When a user visits one of these URLs, the route is like the street they're on. The route defines what actions to take and which parts of the web app to show.
 
-#### Defining routes
+### Defining routes
 ```
 // In app.js, you define routes using Express's router method:
 const express = require('express');
@@ -101,12 +96,11 @@ Think of this like creating a new street in your city:
 2. Route is like a specific street within the city. In this case, it's the / route for the dashboard.
 
 Here are some key concepts to keep in mind:
-
 - GET: This is like sending a postcard or asking a question. The web app responds with information or data.
 - POST: This is like sending a package or making a request. The web app processes the data and sends back a response.
 
 Example route
-``
+```
 // Let's create a simple example:
 
 const express = require('express');
@@ -120,22 +114,24 @@ router.post('/submit', (req, res) => {
     const name = req.body.name;
     res.send(`Hello, ${name}!`);
 });
-``
+```
+
 In this example:
 - The / route responds with a simple message when a GET request is made.
 - The /submit route processes form data and sends back a personalized message.
-Resources - Slays:
 
+Resources - Slays:
 Express Documentation: https://expressjs.com/
 EJS Documentation: https://ejs.co/
 Node.js Tutorial (MDN): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_JSON
 
-*** Let's build that app.js file, brick by bloody brick. 🔥***
-==============================================================
+## Let's build that app.js file, brick by bloody brick. 🔥
+=====
+
+
 Follow bottom tutorial for a very simple guided setup of an app.
 
 ##### Step 1: Project Setup (If you haven't already)
-
 Make sure you have Node.js and npm installed. Create a new directory for your project, navigate into it in your terminal, and run 
 ```
 npm init -y 
@@ -143,15 +139,14 @@ npm init -y
 and voila, you just created a package.json file. This file will track your project’s dependencies.
 
 ##### Step 2: Install Dependencies – The Essentials
-
 We'll need Express (for handling requests), EJS (for templating), and potentially body-parser for handling form data. Run these commands in your terminal:
 ```
 npm install express ejs body-parser
 ```
-##### Step 3: app.js - The Foundation
 
-// Here’s the code for your app.js file – let's break it down piece by piece:
+##### Step 3: app.js - The Foundation
 ```
+// Here’s the code for your app.js file – let's break it down piece by piece:
 const express = require('express');  // Import the Express framework
 const path = require('path'); // For handling file paths (important!)
 const body_parser = require('body-parser'); // Middleware for parsing form data
@@ -188,7 +183,6 @@ app.listen(port, () => {
 ```
 
 Explanation:
-
 - require(): Imports modules (Express, path, body-parser, EJS).
 - const app = express();: Creates an instance of the Express application.
 - app.set('view engine', 'ejs');: Tells Express to use EJS for rendering views.
@@ -200,8 +194,8 @@ Explanation:
 
 ##### Step 4: Create views/index.ejs (The Basic HTML)
 
-// Create a file named index.ejs in your views directory and paste this into it:
 ```
+// Create a file named index.ejs in your views directory and paste this into it:
 <!DOCTYPE html>
 <html>
 <head>
@@ -222,6 +216,5 @@ node app.js
 You should see "Server listening on port 3000" printed to the console. Open your web browser and go to http://localhost:3000. You should see “Welcome to your Node.js app!” displayed – congratulations, mate! 🎉
 
 ##### Important Notes:
-
 - File Paths: Make sure the paths in app.js are correct relative to where you’re running the script from.
 - Error Handling: For a real application, you'd want to add error handling (try...catch blocks) to catch potential problems.
