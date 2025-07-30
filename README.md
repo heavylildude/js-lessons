@@ -1,11 +1,5 @@
 # 🏄‍♂️ JS Lessons — Catch the JavaScript Wave!
 
-```
-Required reading:
-1. Basic Js Literals
-2. Async & Event Loop
-```
-
 G’day legend! Welcome to **JS Lessons**, your one-stop surf shack for learning JavaScript, CSS, and a bit of EJS magic. Whether you’re just paddling out or already catching barrels, this repo’s got the goods to get you shredding code like a true tech grommet. 🌊
 
 ---
