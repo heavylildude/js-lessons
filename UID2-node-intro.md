@@ -133,11 +133,16 @@ Follow bottom tutorial for a very simple guided setup of an app.
 
 ### Step 1: Project Setup (If you haven't already)
 
-Make sure you have Node.js and npm installed. Create a new directory for your project, navigate into it in your terminal, and run npm init -y to create a package.json file. This file will track your project’s dependencies.
+Make sure you have Node.js and npm installed. Create a new directory for your project, navigate into it in your terminal, and run 
+
+npm init -y 
+
+and voila, you just created a package.json file. This file will track your project’s dependencies.
 
 ### Step 2: Install Dependencies – The Essentials
 
 We'll need Express (for handling requests), EJS (for templating), and potentially body-parser for handling form data. Run these commands in your terminal:
+
 npm install express ejs body-parser
 
 
