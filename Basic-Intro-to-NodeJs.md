@@ -3,11 +3,9 @@
 
 Node.js is an open-source JavaScript runtime built on Chrome's V8 engine that allows developers to run JavaScript on the server-side. It's like having a superpower in your coding arsenal! 🤖
 
-``
-Required reading:
-1. [Basic Js Literals](https://github.com/heavylildude/js-lessons/blob/main/Basic-Js-Literals.md)
-2. [Async & Event Loop](https://github.com/heavylildude/js-lessons/blob/main/Basic-Asynchronous-Concept-and-Event-Loop.md)
-``
+> Required reading:
+> 1. [Basic Js Literals](https://github.com/heavylildude/js-lessons/blob/main/Basic-Js-Literals.md)
+> 2. [Async & Event Loop](https://github.com/heavylildude/js-lessons/blob/main/Basic-Asynchronous-Concept-and-Event-Loop.md)
 
 ##### Using Commandline:
 
