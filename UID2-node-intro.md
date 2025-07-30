@@ -129,6 +129,7 @@ Node.js Tutorial (MDN): https://developer.mozilla.org/en-US/docs/Web/JavaScript/
 
 *** Let's build that app.js file, brick by bloody brick. 🔥***
 ==============================================================
+Follow bottom tutorial for a very simple guided setup of an app.
 
 ### Step 1: Project Setup (If you haven't already)
 
