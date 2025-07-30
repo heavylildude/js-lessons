@@ -3,6 +3,12 @@
 
 Node.js is an open-source JavaScript runtime built on Chrome's V8 engine that allows developers to run JavaScript on the server-side. It's like having a superpower in your coding arsenal! 🤖
 
+``
+Required reading:
+1. [Basic Js Literals](https://github.com/heavylildude/js-lessons/blob/main/Basic-Js-Literals.md)
+2. [Async & Event Loop](https://github.com/heavylildude/js-lessons/blob/main/Basic-Asynchronous-Concept-and-Event-Loop.md)
+``
+
 ##### Using Commandline:
 
 To get started with Node.js, you'll need to install it on your computer. You can do this by downloading and installing from the official website or using a package manager like npm (Node Package Manager). Once installed, open up your terminal/command prompt and type:
