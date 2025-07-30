@@ -121,12 +121,13 @@ In this example:
 - The /submit route processes form data and sends back a personalized message.
 
 Resources - Slays:
-Express Documentation: https://expressjs.com/
-EJS Documentation: https://ejs.co/
-Node.js Tutorial (MDN): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_JSON
+- Express Documentation: https://expressjs.com/
+- EJS Documentation: https://ejs.co/
+- Node.js Tutorial (MDN): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_JSON
 
 
-> Follow bottom tutorial for a very simple guided setup of an app.
+
+## Follow bottom tutorial for a very simple guided setup of an app.
 
 #### Step 1: Project Setup (If you haven't already)
 Make sure you have Node.js and npm installed. Create a new directory for your project, navigate into it in your terminal, and run 
