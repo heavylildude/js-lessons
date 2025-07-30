@@ -129,20 +129,20 @@ Resources - Slays:
 
 ## Follow bottom tutorial for a very simple guided setup of an app.
 
-#### Step 1: Project Setup (If you haven't already)
+#### 🏄‍♂️ Step 1: Project Setup (If you haven't already)
 Make sure you have Node.js and npm installed. Create a new directory for your project, navigate into it in your terminal, and run 
 ```
 npm init -y 
 ```
 and voila, you just created a package.json file. This file will track your project’s dependencies.
 
-#### Step 2: Install Dependencies – The Essentials
+#### 🏄‍♂️ Step 2: Install Dependencies – The Essentials
 We'll need Express (for handling requests), EJS (for templating), and potentially body-parser for handling form data. Run these commands in your terminal:
 ```
 npm install express ejs body-parser
 ```
 
-#### Step 3: app.js - The Foundation
+#### 🏄‍♂️ Step 3: app.js - The Foundation
 ```
 // Here’s the code for your app.js file – let's break it down piece by piece:
 const express = require('express');  // Import the Express framework
@@ -190,7 +190,7 @@ Explanation:
 - app.post('/submit', ...): Defines a route that responds to POST requests at /submit. This is where you’ll handle form submissions.
 
 
-#### Step 4: Create views/index.ejs (The Basic HTML)
+#### 🏄‍♂️ Step 4: Create views/index.ejs (The Basic HTML)
 
 ```
 // Create a file named index.ejs in your views directory and paste this into it:
@@ -205,7 +205,7 @@ Explanation:
 </html>
 ```
 
-#### Step 5: Run the App!
+#### 🏄‍♂️ Step 5: Run the App!
 
 Save app.js and then run this command in your terminal:
 ```
