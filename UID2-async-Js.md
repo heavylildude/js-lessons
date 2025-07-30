@@ -8,7 +8,7 @@ Even if you're just here for the good vibes, understanding these bits will make 
 ### Asynchronous Programming and Callbacks (Quick Recap)
 Remember how we talked about asynchronous code? It's about doing multiple things at once. Instead of waiting for a long task (like fetching data from the internet), your program just kicks off that task and moves on to the next thing. When the long task is done, it uses a callback – a function you gave it – to tell your program, "Hey, I'm done! Here's the result!"
 
-- Analogy: You order a pizza. You don't stand by the oven. You give the pizza place your number (the callback). They call you when it's ready. You keep doing your thing until the phone rings.
+> Analogy: You order a pizza. You don't stand by the oven. You give the pizza place your number (the callback). They call you when it's ready. You keep doing your thing until the phone rings.
 ```
 function orderPizza(type, onReadyCallback) {
   console.log(`Ordering a ${type} pizza...`);
@@ -34,7 +34,7 @@ Timers are built-in functions in JavaScript (and Node.js) that let you schedule 
 
 **setTimeout**
 Runs a function once after a specified delay.
-- Analogy: Setting an alarm for a specific time. It rings once, and that's it.
+> Analogy: Setting an alarm for a specific time. It rings once, and that's it.
 
 ```
 console.log("Morning surf check.");
@@ -54,7 +54,7 @@ console.log("Still stretching, no rush.");
 
 **setInterval**
 Runs a function repeatedly at a specified interval.
-- Analogy: Your watch beeping every hour. It keeps beeping until you turn it off.
+> Analogy: Your watch beeping every hour. It keeps beeping until you turn it off.
 
 ```
 let countdown = 3;
@@ -80,7 +80,7 @@ console.log("Pre-launch sequence initiated.");
 
 ### Promises (Quick Recap)
 We talked about Promises in Lesson 1. They're like a fancy receipt for an async operation. They tell you, "I promise to give you a result (or an error) later." They make chaining async tasks way cleaner than nested callbacks.
-- Analogy: The "custom surfboard order" from Lesson 1. You get a receipt (the Promise) and you can .then() go surf when it's ready, or .catch() a bummer if it's dinged.*
+> Analogy: The "custom surfboard order" from Lesson 1. You get a receipt (the Promise) and you can .then() go surf when it's ready, or .catch() a bummer if it's dinged.*
 
 ```
 function fetchUserData(userId) {
@@ -119,7 +119,7 @@ console.log("Doing other stuff while data loads...");
 
 ### Async and Await (Quick Recap)
 This is the modern, super-clean way to work with Promises. async functions are functions that can pause and await a Promise to resolve. It makes async code look almost like regular synchronous code, which is a massive win for readability.
-- Analogy: The "magic remote control" from Lesson 1. You await for the coffee, and your function pauses just for that bit, letting other stuff run, then picks up when the coffee's ready.
+> Analogy: The "magic remote control" from Lesson 1. You await for the coffee, and your function pauses just for that bit, letting other stuff run, then picks up when the coffee's ready.
 
 ```
 // Reusing the fetchUserData Promise function
@@ -144,8 +144,8 @@ console.log("Still running main program flow...");
 ### Closures
 Okay, this one's a bit more subtle, but super powerful and common in async JS. A closure is when a function "remembers" its surrounding environment (its "lexical scope") even after that environment has gone away. It can still access variables from where it was created.
 
-- Analogy: Imagine you're at a party. You meet someone and they give you their phone number (a function). Even after you leave the party (the outer function finishes), you still have their number and can call them (the inner function can still access variables from its original scope).
-- Why it matters: Closures are fundamental for callbacks, event handlers, and many patterns in Node.js, allowing functions to carry specific data with them.
+> Analogy: Imagine you're at a party. You meet someone and they give you their phone number (a function). Even after you leave the party (the outer function finishes), you still have their number and can call them (the inner function can still access variables from its original scope).
+> Why it matters: Closures are fundamental for callbacks, event handlers, and many patterns in Node.js, allowing functions to carry specific data with them.
 
 ```
 function createGreeter(greeting) {
@@ -168,17 +168,17 @@ sayGday("Chris"); // Output: G'day, Chris!
 ### The Event Loop
 This is the engine room of Node.js (and browser JavaScript)! The Event Loop is what allows JavaScript to handle asynchronous operations in a non-blocking way, even though JavaScript itself is single-threaded (it only does one thing at a time).
 
-- Analogy: Think of a busy café with only one barista (the single JavaScript thread).
+> Analogy: Think of a busy café with only one barista (the single JavaScript thread).
 
-- Imagine this process stack:
--- Main Counter (Call Stack): This is where the barista works on immediate orders (synchronous code).
--- Order Board (Web APIs/Node.js APIs): When you order a complex drink (an async task like fetching data or a timer), the barista hands it off to a specialized machine (like an espresso machine or a blender). The barista doesn't wait for it; they go back to the main counter.
--- "Ready" Bell (Callback Queue / Task Queue): When a specialized machine finishes a complex drink, it rings a bell, and the drink goes onto a "ready for pickup" shelf.
--- The Barista's Check (Event Loop): The barista (the Event Loop) constantly checks if the main counter (Call Stack) is empty. Only when the main counter is empty does the barista look at the "ready for pickup" shelf (Callback Queue). If there's a drink there, they grab it and serve it (put the callback function onto the Call Stack to be executed).
+Imagine this process stack:
+- Main Counter (Call Stack): This is where the barista works on immediate orders (synchronous code).
+- Order Board (Web APIs/Node.js APIs): When you order a complex drink (an async task like fetching data or a timer), the barista hands it off to a specialized machine (like an espresso machine or a blender). The barista doesn't wait for it; they go back to the main counter.
+- "Ready" Bell (Callback Queue / Task Queue): When a specialized machine finishes a complex drink, it rings a bell, and the drink goes onto a "ready for pickup" shelf.
+- The Barista's Check (Event Loop): The barista (the Event Loop) constantly checks if the main counter (Call Stack) is empty. Only when the main counter is empty does the barista look at the "ready for pickup" shelf (Callback Queue). If there's a drink there, they grab it and serve it (put the callback function onto the Call Stack to be executed).
 
 *This means that even if an async task finishes really quickly, its callback won't run until the main JavaScript thread is free.*
 
-- Why it matters: Understanding the Event Loop helps you grasp why async code behaves the way it does, especially when dealing with timing and order of operations in Node.js.
+> Why it matters: Understanding the Event Loop helps you grasp why async code behaves the way it does, especially when dealing with timing and order of operations in Node.js.
 
 ```
 console.log("1. Start of script."); // Synchronous
