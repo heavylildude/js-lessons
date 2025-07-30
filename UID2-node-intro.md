@@ -149,9 +149,13 @@ npm install express ejs body-parser
 ### Step 3: app.js - The Foundation
 
 // Here’s the code for your app.js file – let's break it down piece by piece:
+
 const express = require('express');  // Import the Express framework
+
 const path = require('path'); // For handling file paths (important!)
+
 const body_parser = require('body-parser'); // Middleware for parsing form data
+
 const ejs = require('ejs'); // EJS engine for templating
 
 const app = express(); // Create an instance of the Express application
