@@ -170,11 +170,11 @@ This is the engine room of Node.js (and browser JavaScript)! The Event Loop is w
 
 - Analogy: Think of a busy café with only one barista (the single JavaScript thread).
 
-Imagine this process stack:
-- Main Counter (Call Stack): This is where the barista works on immediate orders (synchronous code).
-- Order Board (Web APIs/Node.js APIs): When you order a complex drink (an async task like fetching data or a timer), the barista hands it off to a specialized machine (like an espresso machine or a blender). The barista doesn't wait for it; they go back to the main counter.
-- "Ready" Bell (Callback Queue / Task Queue): When a specialized machine finishes a complex drink, it rings a bell, and the drink goes onto a "ready for pickup" shelf.
-- The Barista's Check (Event Loop): The barista (the Event Loop) constantly checks if the main counter (Call Stack) is empty. Only when the main counter is empty does the barista look at the "ready for pickup" shelf (Callback Queue). If there's a drink there, they grab it and serve it (put the callback function onto the Call Stack to be executed).
+- Imagine this process stack:
+-- Main Counter (Call Stack): This is where the barista works on immediate orders (synchronous code).
+-- Order Board (Web APIs/Node.js APIs): When you order a complex drink (an async task like fetching data or a timer), the barista hands it off to a specialized machine (like an espresso machine or a blender). The barista doesn't wait for it; they go back to the main counter.
+-- "Ready" Bell (Callback Queue / Task Queue): When a specialized machine finishes a complex drink, it rings a bell, and the drink goes onto a "ready for pickup" shelf.
+-- The Barista's Check (Event Loop): The barista (the Event Loop) constantly checks if the main counter (Call Stack) is empty. Only when the main counter is empty does the barista look at the "ready for pickup" shelf (Callback Queue). If there's a drink there, they grab it and serve it (put the callback function onto the Call Stack to be executed).
 
 *This means that even if an async task finishes really quickly, its callback won't run until the main JavaScript thread is free.*
 
