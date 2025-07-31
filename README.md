@@ -35,9 +35,9 @@ Crack open your terminal and type:
 sh
 node -v
 ```
-Should spit out a version number, like v20.10.0. If ya see that, you’re sweet!
+*Should spit out a version number, like v20.10.0. If ya see that, you’re sweet!*
 
-## 2. Terminal: Your Power Shack
+#### 2. Terminal: Your Power Shack
 > Mac:
 Hit ⌘ + Space and type “Terminal”, then enter.
 Or, surf to Applications > Utilities > Terminal.
