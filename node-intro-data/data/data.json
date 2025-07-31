@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Liam O'Connell",
+    "phone": "0412 345 678",
+    "email": "liam.oconnell@example.com",
+    "address": "123 Bondi Beach, NSW",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "name": "Chloe Davies",
+    "phone": "0408 987 654",
+    "email": "chloe.davies@example.com",
+    "address": "456 Coogee Bay, NSW",
+    "is_active": false
+  },
+  {
+    "id": 3,
+    "name": "Noah Singh",
+    "phone": "0421 567 890",
+    "email": "noah.singh@example.com",
+    "address": "789 Manly Beach, NSW",
+    "is_active": true
+  },
+  {
+    "id": 4,
+    "name": "Zara Khan",
+    "phone": "0434 234 567",
+    "email": "zara.khan@example.com",
+    "address": "101 Palm Beach, NSW",
+    "is_active": true
+  }
+]
