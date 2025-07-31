@@ -30,8 +30,8 @@ The terminal is like a magic list where you can see everything, grab whatever yo
 ```bash
 pwd
 ```
-> **Print Working Directory**  
-This command tells you exactly where you are in your digital backpack. It's like asking, "Where am I right now?"
+* **Print Working Directory**  
+This command tells you exactly where you are in your digital backpack. It's like asking, "Where am I right now?" *
 
 ```bash
 ls
