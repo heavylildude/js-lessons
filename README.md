@@ -22,6 +22,37 @@ G’day legend! Welcome to **JS Lessons**, your one-stop surf shack for learning
 ---
 
 
+## 🛠️ Getting Set Up (No Worries, Mate!)
+
+#### 1. You’ll Need Node.js (Legendary Tool for JavaScript)
+Trust me, Node.js is your golden ticket.
+Download it from the official spot here: nodejs.org
+Grab the LTS version (that’s the “Long Term Support” one—super chill, less drama).
+Run the installer (just click through, no stress).
+How to Check Node Installed Properly
+Crack open your terminal and type:
+```
+sh
+node -v
+```
+Should spit out a version number, like v20.10.0. If ya see that, you’re sweet!
+
+## 2. Terminal: Your Power Shack
+> Mac:
+Hit ⌘ + Space and type “Terminal”, then enter.
+Or, surf to Applications > Utilities > Terminal.
+
+
+> Windows:
+Press Win + S, type “cmd” or “Terminal”, hit enter.
+For the cool vibes, try “Windows Terminal” from the Microsoft Store.
+
+> Linux:
+Hit Ctrl + Alt + T, or look for “Terminal” in your app menu.
+Mate, once you’ve got Node and your terminal open, you’re set to shred some code!
+(And if something’s sus, flick me a message—I’ll sort you out.)
+
+
 ## 🥝 About the Creator
 
 Built with stoke by [heavylildude](https://github.com/heavylildude).  
