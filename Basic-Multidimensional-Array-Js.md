@@ -1,4 +1,8 @@
 # Welcome to Multidimensional Arrays, brah!
+
+> Required reading:
+> 1. [Basic Js Literals](https://github.com/heavylildude/js-lessons/blob/main/Basic-Js-Literals.md)
+
 It's basically an array where each element is *another* array. Imagine a spreadsheet: rows are the outer array, and columns within each row are the inner arrays. This is where things get a bit more complex, but the power you get is straight-up wild. Think of it like a spreadsheet in your code—arrays within arrays. It's perfect for stashing data like our surf sessions.
 
 Each inner array is one session: [Spot, Date, Wave Height (feet), Swell Direction]
