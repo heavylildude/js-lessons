@@ -81,11 +81,6 @@ Stuck without a laptop? No dramas, brah — you can run all this JS goodness str
      ```
    - Wait a sec while it sorts itself out.
 
-5. **Clone This Repo & Go Surfing the Code**
-   ```sh
-   git clone https://github.com/heavylildude/js-lessons.git
-   cd js-lessons
-   ```
 
 And you’re all set, mate! Run your JavaScript, build rad stuff, and show off to your mates — all from your pocket. 🤙
 
