@@ -81,12 +81,12 @@ clear
 
 ---
 
-## ☕ Break Time! (10 mins)
+#### ☕ Break Time! (10 mins)
 
 Stretch, grab a drink, and give your brain a reset. We’re about to get into the fun stuff.
 
 ---
-
+<br>
 ## 💻 Part 2: Your First Code Spell
 
 Now that you can navigate, it's time to create something.  
@@ -151,7 +151,7 @@ node app.js
 You just cast your first code spell.
 
 ---
-
+<br>
 ## ✨ Part 3: Lexical Structure & Playtime
 
 Now let's break down the spell a bit more and have some fun.  
