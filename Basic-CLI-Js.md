@@ -9,7 +9,7 @@ Think of the terminal as your **personal command center**, Node.js as the **powe
 
 Before we start coding, we need to find our way around. Forget point-and-click; we’re going old-school, but in a super efficient way.
 
-### **Analogy: The Terminal is Your Backpack**
+### **Analogy: The Terminal is Your Spell Caster**
 
 Imagine your computer is a giant, magical backpack with thousands of folders and files.  
 Clicking around with your mouse is like pulling things out one by one.  
