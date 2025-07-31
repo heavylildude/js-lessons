@@ -31,11 +31,15 @@ Grab the LTS version (that’s the “Long Term Support” one—super chill, le
 Run the installer (just click through, no stress).
 How to Check Node Installed Properly
 Crack open your terminal and type:
+
 ```
-sh
 node -v
 ```
-*Should spit out a version number, like v20.10.0. If ya see that, you’re sweet!*
+or
+```
+node --version
+```
+*Notice the diff? Should spit out a version number, like v20.10.0. If ya see that, you’re sweet!*
 
 #### 2. Terminal: Your Power Shack
 > Mac:
