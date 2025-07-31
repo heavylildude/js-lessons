@@ -30,35 +30,39 @@ The terminal is like a magic list where you can see everything, grab whatever yo
 ```bash
 pwd
 ```
-**Print Working Directory** This command tells you exactly where you are in your digital backpack. It's like asking, "Where am I right now?"
+***Print Working Directory** This command tells you exactly where you are in your digital backpack. It's like asking, "Where am I right now?"*
 
 ```bash
 ls
 ```
-> **List**  
-This shows you all the files and folders in your current location. It's like unzipping your backpack to see what's inside.
+***List** This shows you all the files and folders in your current location. It's like unzipping your backpack to see what's inside.*
 
 ```bash
 cd <folder-name>
 ```
-> **Change Directory**  
-Use this to move into a folder. For example:
+***Change Directory**  Use this to move into a folder. For example:*
 ```bash
 cd Documents
 ```
-To go back, just type:
+*To go back, just type:*
 ```bash
 cd ..
 ```
-This is your digital teleport button.
 
 ```bash
 mkdir <folder-name>
 ```
-> **Make Directory**  
-Use this to create a new folder. For example:
+***Make Directory** Use this to create a new folder. For example:*
 ```bash
 mkdir my-first-code
+```
+
+```bash
+touch <file-name>
+```
+***Make New File** Use this to create a new file. For example:*
+```bash
+touch omagahitssocool.txt
 ```
 Slay!
 
