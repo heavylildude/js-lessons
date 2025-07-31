@@ -82,7 +82,6 @@ clear
 ---
 
 #### ☕ Break Time! (10 mins)
-
 Stretch, grab a drink, and give your brain a reset. We’re about to get into the fun stuff.
 <br>
 ---
@@ -147,8 +146,9 @@ Back in the terminal, run your file:
 node app.js
 ```
 
-**Boom!** You should see `Hello, world!` printed right there.  
-You just cast your first code spell.
+#### **Boom!** You should see `Hello, world!` printed right there.  
+#### You just cast your first code spell.
+
 <br>
 ---
 
@@ -217,7 +217,7 @@ and see your new magic!
 
 ---
 
-## 🏆 You've Slayed!
+#### 🏆 You've Slayed!
 
 You've learned how to command your computer, write and run your first code, and understand the basic grammar of JavaScript.  
 You're not just a user anymore—you're a creator.  
