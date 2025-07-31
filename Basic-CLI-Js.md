@@ -27,10 +27,11 @@ The terminal is like a magic list where you can see everything, grab whatever yo
 
 #### **Basic Commands:**
 
+***Print Working Directory** This command tells you exactly where you are in your digital backpack. It's like asking, "Where am I right now?"*
 ```bash
 pwd
 ```
-***Print Working Directory** This command tells you exactly where you are in your digital backpack. It's like asking, "Where am I right now?"*
+<hr>
 
 ***List** This shows you all the files and folders in your current location. It's like unzipping your backpack to see what's inside.*
 ```bash
