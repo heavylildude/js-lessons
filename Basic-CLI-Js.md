@@ -81,8 +81,9 @@ clear
 
 ---
 
-#### ☕ Break Time! (10 mins)
+#### ☕ 10 mins Break Time!
 Stretch, grab a drink, and give your brain a reset. We’re about to get into the fun stuff.
+
 <br>
 ---
 
