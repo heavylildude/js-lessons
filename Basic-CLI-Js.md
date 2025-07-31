@@ -32,15 +32,16 @@ pwd
 ```
 ***Print Working Directory** This command tells you exactly where you are in your digital backpack. It's like asking, "Where am I right now?"*
 
+***List** This shows you all the files and folders in your current location. It's like unzipping your backpack to see what's inside.*
 ```bash
 ls
 ```
-***List** This shows you all the files and folders in your current location. It's like unzipping your backpack to see what's inside.*
 
+***Change Directory**  Use this to move into a folder.* 
 ```bash
 cd <folder-name>
 ```
-***Change Directory**  Use this to move into a folder. For example:*
+*For example:*
 ```bash
 cd Documents
 ```
@@ -49,27 +50,30 @@ cd Documents
 cd ..
 ```
 
+***Make Directory** Use this to create a new folder.*
 ```bash
 mkdir <folder-name>
 ```
-***Make Directory** Use this to create a new folder. For example:*
+*For example:*
 ```bash
 mkdir my-first-code
 ```
 
+***Make New File** Use this to make coffee.*
 ```bash
 touch <file-name>
 ```
-***Make New File** Use this to create a new file. For example:*
+*DUH! For example:*
 ```bash
 touch omagahitssocool.txt
 ```
-Slay!
 
+
+***Clear** Basically wiping your screen.*
 ```bash
 clear
 ```
-> Tidies up the screen, getting rid of old commands so you can see things clearly.
+*Tidies up the screen, getting rid of old commands so you can see things clearly.*
 
 ---
 
