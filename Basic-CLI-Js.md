@@ -24,7 +24,7 @@ The terminal is like a magic list where you can see everything, grab whatever yo
 - **Mac:** Search for "Terminal" in Spotlight (`Cmd + Space`).
 - **Windows:** Search for "Command Prompt" or "PowerShell" in the Start Menu. (We'll use **Git Bash** for simplicity if you have it installed).
 - **Linux:** It's usually a shortcut on your desktop or in the applications menu.
-
+<br>
 #### **Basic Commands:**
 
 ***Print Working Directory** This command tells you exactly where you are in your digital backpack. It's like asking, "Where am I right now?"*
@@ -37,6 +37,7 @@ pwd
 ```bash
 ls
 ```
+<hr>
 
 ***Change Directory**  Use this to move into a folder.* 
 ```bash
@@ -50,6 +51,7 @@ cd Documents
 ```bash
 cd ..
 ```
+<hr>
 
 ***Make Directory** Use this to create a new folder.*
 ```bash
@@ -59,6 +61,7 @@ mkdir <folder-name>
 ```bash
 mkdir my-first-code
 ```
+<hr>
 
 ***Make New File** Use this to make coffee.*
 ```bash
@@ -68,7 +71,7 @@ touch <file-name>
 ```bash
 touch omagahitssocool.txt
 ```
-
+<hr>
 
 ***Clear** Basically wiping your screen.*
 ```bash
