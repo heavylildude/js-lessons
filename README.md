@@ -15,7 +15,7 @@ G’day legend! Welcome to **JS Lessons**, your one-stop surf shack for learning
 ## 🏄‍♂️ Why Should You Give a Toss?
 
 - Fact: You’ll learn real-world JS skills, not just textbook fluff.
-- Opinion: This repo’s more fun than a weekend sesh at Bondi Beach, no cap.
+- Opinion: This repo’s more fun than a weekend sesh at Batu Bolong Beach, no cap.
 - Fact: Easy for noobs, still spicy for pros.
 - Opinion: If you’re not stoked after using this, I’ll eat my flip-flop (not really, but like... you get it).
 
