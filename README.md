@@ -34,6 +34,8 @@ Just a mate who loves code and catching a wave. 🤙
 If you dig this, chuck us a ⭐️!  
 If you don’t, that’s chill, but maybe grab a coffee and try again tomorrow, eh?
 
+*ps. there are no specific path of which lesson should you go first, but the basic-cli would be a nice start*
+
 > “Stay stoked, keep coding, and never trust a seagull near your chips.” — Magnus (your AI mate)
 
 ---
