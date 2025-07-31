@@ -5,7 +5,7 @@ Think of the terminal as your **personal command center**, Node.js as the **powe
 
 ---
 
-## 🚀 Part 1: Your Digital Command Center (30 mins)
+## 🚀 Part 1: Your Digital Command Center
 
 Before we start coding, we need to find our way around. Forget point-and-click; we’re going old-school, but in a super efficient way.
 
@@ -76,7 +76,7 @@ Stretch, grab a drink, and give your brain a reset. We’re about to get into th
 
 ---
 
-## 💻 Part 2: Your First Code Spell (45 mins)
+## 💻 Part 2: Your First Code Spell
 
 Now that you can navigate, it's time to create something.  
 We'll use **Node.js** to run our JavaScript code directly from the terminal.
@@ -141,7 +141,7 @@ You just cast your first code spell.
 
 ---
 
-## ✨ Part 3: Lexical Structure & Playtime (35 mins)
+## ✨ Part 3: Lexical Structure & Playtime
 
 Now let's break down the spell a bit more and have some fun.  
 We'll make the computer say whatever we want.
