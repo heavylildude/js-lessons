@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Liam The Legend Connell",
+    "phone": "0412 345 678",
+    "email": "liam.connell@example.com",
+    "address": "123 Bondi Break, NSW",
+    "is_active": 1
+  },
+  {
+    "id": 2,
+    "name": "Chloe Cruiser Davies",
+    "phone": "0408 987 654",
+    "email": "chloe.davies@example.com",
+    "address": "456 Coogee Cove, NSW",
+    "is_active": 0
+  },
+  {
+    "id": 3,
+    "name": "Noah Noodle Arm Singh",
+    "phone": "0421 567 890",
+    "email": "noah.singh@example.com",
+    "address": "789 Manly Point, NSW",
+    "is_active": 1
+  },
+  {
+    "id": 4,
+    "name": "Zara Zen Master Khan",
+    "phone": "0434 234 567",
+    "email": "zara.khan@example.com",
+    "address": "101 Palm Paradise, NSW",
+    "is_active": 1
+  },
+  {
+    "id": 5,
+    "name": "Jake J-Bay Miller",
+    "phone": "0456 789 012",
+    "email": "jake.miller@example.com",
+    "address": "222 Bells Beach, VIC",
+    "is_active": 1
+  },
+  {
+    "id": 6,
+    "name": "Mia Maverick Chen",
+    "phone": "0478 901 234",
+    "email": "mia.chen@example.com",
+    "address": "333 Cloudbreak Lane, FIJI",
+    "is_active": 0
+  },
+  {
+    "id": 7,
+    "name": "Ryan Reef Rider Tanaka",
+    "phone": "0490 123 456",
+    "email": "ryan.tanaka@example.com",
+    "address": "444 Pipeline Perch, HI",
+    "is_active": 1
+  },
+  {
+    "id": 8,
+    "name": "Sophie Soul Surfer Kim",
+    "phone": "0411 223 344",
+    "email": "sophie.kim@example.com",
+    "address": "555 Sunset Road, BALI",
+    "is_active": 1
+  },
+  {
+    "id": 9,
+    "name": "Leo Leftie Thompson",
+    "phone": "0422 334 455",
+    "email": "leo.thompson@example.com",
+    "address": "169 Monkey Forest Road, BALI",
+    "is_active": 1
+  },
+  {
+    "id": 10,
+    "name": "Ava Aloha Rodriguez",
+    "phone": "0433 445 566",
+    "email": "ava.rodriguez@example.com",
+    "address": "777 Waikiki Shore, HI",
+    "is_active": 1
+  },
+  {
+    "id": 11,
+    "name": "Ben Beach Bum Wilson",
+    "phone": "0444 556 677",
+    "email": "ben.wilson@example.com",
+    "address": "888 Gold Coast Glide, QLD",
+    "is_active": 1
+  },
+  {
+    "id": 12,
+    "name": "Ella Eternal Grom Patel",
+    "phone": "0455 667 788",
+    "email": "ella.patel@example.com",
+    "address": "999 Trestles Terrace, CA",
+    "is_active": 1
+  }
+]

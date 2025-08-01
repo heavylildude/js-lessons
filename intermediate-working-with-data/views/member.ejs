@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Members</title>
+  <link rel="stylesheet" type="text/css" href="/assets/global.css" />
+</head>
+<body>
+  <%- include('partials/menu.ejs') %>
+  <h1>Members</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Active</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% members.forEach(function(member) { %>
+        <tr>
+          <td><b onclick="location.replace('member/<%= member.id %>')"><%= member.name %></b></td>
+          <td><%= member.phone %></td>
+          <td><%= member.email %></td>
+          <td><%= member.address %></td>
+          <td><%= member.is_active == '1'  ? 'Yes' : 'No' %></td>
+          <td><button type="button" onclick="deleteMember('<%= member.id %>')">Delete</button></td>
+        </tr>
+      <% }); %>
+    </tbody>
+    <tfoot><form method="post">
+
+        <tr>
+          <td><input type="text" name="member_name" placeholder="Enter member name"></td>
+          <td><input type="text" name="member_phone" placeholder="Enter member phone"></td>
+          <td><input type="text" name="member_email" placeholder="Enter member email"></td>
+          <td><input type="text" name="member_address" placeholder="Enter member address"></td>
+          <td><select name="member_active">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+          </select></td>
+          <td><button type="submit" formaction="/member/create">Create Member</button></td>
+    </tr>
+    </form></tfoot>
+  </table>
+    </tfoot>
+  </table>
+  <script>
+  function deleteMember(x) {
+    if (confirm('Are you sure you want to delete this member?')) {
+      location.href = "/member/delete/" + x
+    }
+  }
+</script>
+</body>
+</html>

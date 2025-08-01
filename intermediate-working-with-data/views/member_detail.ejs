@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hi <%= member.name %></title>
+    <link rel="stylesheet" type="text/css" href="/assets/global.css" />
+  </head>
+  <body>
+    <%- include('partials/menu.ejs') %>
+    <h1>Member Details</h1>
+
+    <h2>Name: <%= member.name %></h2>
+    <p><strong>Phone:</strong> <%= member.phone %></p>
+    <p><strong>Email:</strong> <%= member.email %></p>
+    <p><strong>Address:</strong> <%= member.address %></p>
+    <p><strong>Active:</strong> <%= member.is_active ? 'Yes' : 'No' %></p>
+  </body>
+</html>
