@@ -76,6 +76,15 @@ Stuck without a laptop? No dramas, brah — you can run all this JS goodness str
 
 4. **Install Node.js**
    - Copy-paste this command and send it (easy as):
+   - first make sure your termux packages are on the latest
+     ```sh
+     pkg update
+     ```
+   - if new packages found upgrade it! don't worry its free
+     ```sh
+     pkg upgrade
+     ```
+   - the install nodejs packages:
      ```sh
      pkg install nodejs
      ```
