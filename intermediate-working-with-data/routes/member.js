@@ -172,42 +172,8 @@ router.post('/create', (req, res) => {
   existingData.push(formattedMember);
 
   // --- SAVING THE DATA BACK TO THE FILE ---
-  /*
-   * IMPORTANT NOTE: The original code below builds the JSON string manually.
-   * This is VERY fragile, hard to read, and prone to errors (like trailing commas).
-   * A much, MUCH better way is to use `JSON.stringify()`. It does all the hard work for you.
-   * It takes a JavaScript object/array and converts it into a perfectly formatted JSON string.
-   *
-   * The modern, safer, and recommended way would be just these two lines:
-   *
-   * const jsonString = JSON.stringify(existingData, null, 2); // The `null, 2` part makes it pretty-printed with 2-space indents.
-   * fs.writeFileSync('data/data.json', jsonString, 'utf8');
-   *
-   * I'm leaving the original manual code below so you can see how NOT to do it,
-   * but I've commented it out and replaced it with the better method.
-   */
-
-  // The better way:
   const finalJsonString = JSON.stringify(existingData, null, 2); // Convert the whole updated array back to a pretty JSON string.
   fs.writeFileSync('data/data.json', finalJsonString, 'utf8'); // Write the new string to the file, overwriting the old one.
-
-  /*
-  // --- START OF THE OLD, MANUAL, NOT-RECOMMENDED WAY ---
-  const writer = FileWriter('data/data.json', 'utf8');
-  let json = '[';
-  for (const member of existingData) { // This loop re-builds the entire JSON string from scratch
-    json += '{\n';
-    json += '  "id": ' + member.id + ',\n';
-    json += '  "name": "' + member.name + '",\n';
-    // ...and so on for every single property. Very tedious!
-  }
-  // This manual way easily leads to syntax errors, like a missing or extra comma.
-  // ...
-  writer.write(json);
-  writer.end();
-  // --- END OF THE OLD, MANUAL, NOT-RECOMMENDED WAY ---
-  */
-
 
   // `res.redirect('/member')`
   // After we're done creating and saving the new member, we don't want to just sit here on a blank page.
@@ -238,30 +204,8 @@ router.get('/delete/:id', (req, res) => { // When a GET request is made to this 
   const remainingMembers = allMembers.filter(member => member.id !== memberIdToDelete);
 
   // --- SAVING THE FILTERED DATA BACK TO THE FILE ---
-  /*
-   * Just like in the create route, the original code below manually builds the JSON string.
-   * This is very clunky and error-prone. We'll replace it with the much cleaner `JSON.stringify()` method.
-   * Using `.filter()` and `JSON.stringify()` is the standard, robust way to handle deletion.
-   */
-
-  // The better way:
   const finalJsonString = JSON.stringify(remainingMembers, null, 2); // Convert our new, filtered array into a pretty JSON string.
   fs.writeFileSync('data/data.json', finalJsonString, 'utf8'); // Overwrite the old file with our new, shorter list.
-
-  /*
-  // --- START OF THE OLD, MANUAL, NOT-RECOMMENDED WAY ---
-  // This old code manually loops and builds a string, then has messy logic to remove the trailing comma. Yikes.
-  let filteredJson = '[';
-  // ... loop ...
-  if (filteredJson.endsWith('},\n')) {
-    filteredJson = filteredJson.slice(0, -2) + ']'; // This is fragile! What if the spacing changes?
-  }
-  // ...
-  const writer = FileWriter('data/data.json', 'utf8');
-  writer.write(filteredJson);
-  writer.end();
-  // --- END OF THE OLD, MANUAL, NOT-RECOMMENDED WAY ---
-  */
 
   // Finally, redirect the user back to the main member list to see the result.
   res.redirect('/member');
