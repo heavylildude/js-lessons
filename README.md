@@ -77,7 +77,7 @@ Stuck without a laptop? No dramas, brah — you can run all this JS goodness str
 4. **Install Node.js**
    - Copy-paste this command and send it (easy as):
      ```sh
-     pkg install node
+     pkg install nodejs
      ```
    - Wait a sec while it sorts itself out.
 
